@@ -11,13 +11,12 @@ interface INewsDB{
 	*	@param string $category - категория новости
 	*	@param string $description - текст новости
 	*	@param string $source - источник новости
-	*	
 	*	@return boolean - результат успех/ошибка
 	*/
 	function saveNews($title, $category, $description, $source);
 	/**
 	*	Выборка всех записей из новостной ленты
-	*	
+	* 
 	*	@return array - результат выборки в виде массива
 	*/
 	function getNews();
@@ -25,7 +24,6 @@ interface INewsDB{
 	*	Удаление записи из новостной ленты
 	*	
 	*	@param integer $id - идентификатор удаляемой записи
-	*	
 	*	@return boolean - результат успех/ошибка
 	*/
 	function deleteNews($id);
