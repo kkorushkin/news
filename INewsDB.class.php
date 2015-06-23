@@ -1,12 +1,11 @@
 <?php
 /**
 *	inerface INewsDB
-*		содержит основные методы для работы с новостной лентой
+*	содержит основные методы для работы с новостной лентой
 */
 interface INewsDB{
 	/**
 	*	Добавление новой записи в новостную ленту
-	*	
 	*	@param string $title - заголовок новости
 	*	@param string $category - категория новости
 	*	@param string $description - текст новости
@@ -22,7 +21,6 @@ interface INewsDB{
 	function getNews();
 	/**
 	*	Удаление записи из новостной ленты
-	*	
 	*	@param integer $id - идентификатор удаляемой записи
 	*	@return boolean - результат успех/ошибка
 	*/
